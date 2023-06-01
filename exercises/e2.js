@@ -32,8 +32,12 @@ export const getPromise = (bool) => {
  * The handlePromise() function must be exported
  */
 
-export const handlePromise = () => {
-  // Your code goes here...
+export const handlePromise = (prom) => {
+    return prom
+        .then(
+            (pass) => pass, 
+            () => "Uh Oh"
+        );
 };
 
 // === TEST YOURSELF ===
